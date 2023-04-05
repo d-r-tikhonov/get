@@ -16,6 +16,6 @@ try:
         print ("{:.2f}".format(dutyCicle*3.3/100))
 
 finally:
-    gpio.output(2,0)
+    gpio.output(14,0)
     gpio.output(dac, 0)
     gpio.cleanup()
