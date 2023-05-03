@@ -71,7 +71,7 @@ try:
             dataFile.write(str(i) + '\n')
     
     with open ('/home/b01-206/get/7. Measure/settings.txt', 'w') as settingsFile:
-        settingsFile.write('Частота дискретизации: ' + str(count/time_experiment) + '\n')
+        settingsFile.write('Частота дискретизации: ' + str(count/time_experiment) + '\n' + 'Гц')
         settingsFile.write('Шаг квантования АЦП: 0.01289')
 
     print('Общая продолжительность эксперимента {}, период одного измерения {}, средняя частота дискретизации {}, шаг квантования АЦП {}'.format(time_experiment, time_experiment/count, 1/time_experiment/count, 0.013))
