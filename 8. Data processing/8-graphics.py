@@ -29,15 +29,13 @@ ax.set_ylabel("Напряжение U, В")
 ax.set_xlabel("Время t, с")
 
 #линия с легендой
-ax.plot(data_time, data, c = 'red', linewidth = 2, label = 'График зависимости U(t)')
-ax.scatter(data_time[0:data.size:20], data[0:data.size:20], marker = 'o', c = 'black', s = 10)
+ax.plot(data_time, data, c = 'cadetblue', linewidth = 2, label = 'График зависимости U(t)', marker = '^', markerfacecolor = 'cyan', markeredgecolor = 'black', markersize = 8, markevery = 75)
 ax.legend(shadow = False, loc = 'right', fontsize = 14)
 
 #время разрядки и зарядки на графике
 ax.text(50.1, 2.25, "Время зарядки = 22.11 с \n" + "Время разрядки = 45.28 с ", fontsize = 14)
 
 #сохранение графика
-fig.savefig('/home/b01-206/get/8. Data processing/graph.png')
 fig.savefig('/home/b01-206/get/8. Data processing/graph.svg')
 
 
